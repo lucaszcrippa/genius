@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo Genius</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="nivel">Clique em "Iniciar Jogo"</h1>
+    <button id="startBtn" onclick="iniciarJogo()">Iniciar Jogo</button>
+    <div class="grade">
+      <div class="btn vermelho" onclick="verificarClique('vermelho')" id="vermelho"></div>
+      <div class="btn verde" onclick="verificarClique('verde')" id="verde"></div>
+      <div class="btn amarelo" onclick="verificarClique('amarelo')" id="amarelo"></div>
+      <div class="btn azul" onclick="verificarClique('azul')" id="azul"></div>
+    </div>
+  </div>
+  <audio id="red-sound" src="acerto.mp3"></audio>
+<audio id="green-sound" src="acerto.mp3"></audio>
+<audio id="yellow-sound" src="acerto.mp3"></audio>
+<audio id="blue-sound" src="acerto.mp3"></audio>
+<audio id="error-sound" src="error.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
